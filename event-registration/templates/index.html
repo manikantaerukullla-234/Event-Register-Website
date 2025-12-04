@@ -1,0 +1,10 @@
+<h1>Events</h1>
+
+<ul>
+    {% for e in events %}
+        <li>
+            <strong>{{ e[1] }}</strong> - {{ e[2] }} at {{ e[3] }}
+            <a href="/register/{{ e[0] }}">Register</a>
+        </li>
+    {% endfor %}
+</ul>
